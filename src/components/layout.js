@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import Header from "./header";
 import Menu from '../components/menu';
 import "./layout.css"
 
@@ -19,7 +18,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <React.Fragment>
-        <Header siteTitle={data.site.siteMetadata.title} />
         <Menu />
         <div
           style={{
